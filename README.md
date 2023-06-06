@@ -24,7 +24,8 @@ agent配备了一个RGB-D摄像头和一个精确的位置传感器。位置传�
 <!-- ![image](https://github.com/Chortine/Habitat-Object-Navigation/assets/107395103/0df80890-b61f-4b35-a30a-f1aa919a8f88) -->
 
 Habitat官网截图
-![image](https://github.com/Chortine/Habitat-Object-Navigation/assets/107395103/498cf905-9997-4f9c-b800-906b4bfded66)
+
+![image](https://github.com/Chortine/Habitat-Object-Navigation/assets/107395103/d187ae41-e8bc-460a-95ea-3d84975958f3)
 
 <!-- <div align=center>
 <img height="400" src="https://github.com/Chortine/Habitat-Object-Navigation/assets/107395103/0df80890-b61f-4b35-a30a-f1aa919a8f88" width="600"/>
