@@ -3,10 +3,10 @@ Jing Wang*, Tianchu Zhang*, Ningyuan Zhang
 
 ∗Equal contribution.
 ## 介绍
-:star2: :star2: 我们的端到端视觉导航智能体Walle***在Meta AI 2022年举办的Habitat物体导航（Object Navigation）中获得第三名，成功率61%***。项目前三名的介绍视频***在NeurIPS 2022 workshop上由比赛主办方展出***
-(原定于在CVPR2022 的Embodied AI workshop上展出，由于主办方数据集问题推迟到NeurIPS)。:star2: :star2: 
+:star2: :star2: 我们的端到端视觉导航智能体Walle***在Meta AI 2022年举办的Habitat物体导航比赛中 (Habitat Object Navigation) 中获得第三名，成功率61%***。项目前三名的介绍视频***在NeurIPS 2022 workshop上由比赛主办方展出***
+(原定于在CVPR2022 的Embodied AI workshop上展出，由于主办方数据集问题推迟到同年的NeurIPS)。:star2: :star2: 
 
-任务：在物体导航中，代理被随机初始化在一个位置环境中的随机位置和朝向，它需要导航去找到任意一个对应某类别的物体，给他提供的指令例如：“找到一把椅子”。agent不知道环境的地图，只有自身的一些传感器信息。
+任务：每个回合开始，agent被随机初始化在一个位置环境中的随机位置和朝向，给他提供例如“找到一把椅子”的指令，它需要导航去找到某个对应该类别的物体。agent不知道环境的地图，只有自身的一些传感器信息。
 agent配备了一个RGB-D摄像头和一个精确的位置传感器。位置传感器提供agent相对于初始位置时的平面位置和朝向。agent的动作
 
 目标物品：一共有六个类别，分别是
@@ -15,7 +15,7 @@ agent配备了一个RGB-D摄像头和一个精确的位置传感器。位置传�
 仿真使用了Meta开发的Habitat-Lab。训练集为80个3D扫描建模的真实房间。比赛最终在20个没见过的房间里通过1000个回合来评判智能体。
 
 <!-- :star2: :star2: ***项目前三名的介绍视频在NeurIPS 2022 workshop上由比赛主办方展出(原定于在CVPR2022 的Embodied AI workshop上展出，由于主办方数据集问题推迟到NeurIPS)。*** -->
-
+以下是我们训练好的智能体在Habitat仿真里没见过的房间导航的效果视频：
 <div align=center>
 <video src="https://github.com/Chortine/Habitat-Object-Navigation/assets/107395103/f463a626-8ffc-4b85-a662-cc56e85ed7ac" /></a>
 </div>
@@ -41,7 +41,7 @@ agent配备了一个RGB-D摄像头和一个精确的位置传感器。位置传�
 </div>
 
 我们使用了encoder-decoder Transformer的架构来处理时序信息。其中，网络的输入有：
-当前和历史的RGB-D，目标物体类别的embedding，机器人位姿，轨迹俯视图，轨迹和深度图合成的栅格占用地图
+当前和历史的RGB-D，目标物体类别的embedding，机器人位姿，轨迹俯视图，轨迹和深度图合成的栅格占用地图。输出是双头的action，分别表示移动的动作，以及判断是否找到目标，终止回合
 
 ## 核心设计
 1. 网络结构
