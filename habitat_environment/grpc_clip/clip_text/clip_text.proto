@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package rpc_package;
+
+
+service ClipTextService {
+    rpc function_operate_clip_text (text_input) returns (text_feature) {}
+}
+
+
+message text_input {
+    string my_text=1;
+
+}
+
+message text_feature {
+    repeated float s_list=1;
+}

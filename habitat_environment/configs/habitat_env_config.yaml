@@ -1,0 +1,52 @@
+states_to_render:
+  [
+    'rgb',
+    'goal_name',
+    'success',
+#    'clip_semantic',
+    #    'semantic',
+        'depth',
+#        'top_down_map',
+    #    'fog_of_war_gt',
+    'my_fog_of_war',
+#    'region_info',
+#    'object_in_view_percentage',
+  ]
+states_as_info:
+  [
+    'success',
+    'collision',
+    'robot_xy',
+    'floor'
+  ]
+states_as_timing:
+  [
+    'clip_time',
+    'habitat_env_time'
+  ]
+states_in_reward:
+  [
+    'success',
+    'collision',
+    'my_fog_of_war'
+    #    'local_grid_map'
+  ]
+states_as_obs:
+  [
+    'rgb',
+    'depth',
+    'spl',
+    'robot_xyz',
+    'robot_relative_xy',
+    'robot_yaw_trigo',
+    'goal_name',
+    'image_feature',
+    'onehot_goal',
+    'last_action_onehot',
+    'distance_to_goal',
+    'last_distance_to_goal',
+#    'goal_in_view',
+#    'object_in_view_percentage',
+#    'clip_semantic',
+#    'region_info'
+  ]
