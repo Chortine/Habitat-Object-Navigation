@@ -19,7 +19,7 @@ agent配备了一个RGB-D摄像头和一个精确的位置传感器。位置传�
 <!-- :star2: :star2: ***项目前三名的介绍视频在NeurIPS 2022 workshop上由比赛主办方展出(原定于在CVPR2022 的Embodied AI workshop上展出，由于主办方数据集问题推迟到NeurIPS)。*** -->
 以下是我们训练好的智能体在Habitat仿真里没见过的房间导航的效果视频：
 <div align=center>
-<video src="https://github.com/Chortine/Habitat-Object-Navigation/assets/107395103/f463a626-8ffc-4b85-a662-cc56e85ed7ac" /></a>
+<video src="https://github.com/Chortine/Habitat-Object-Navigation/assets/107395103/0ac5fcb6-3092-4de9-ba19-a3ce2cd3731d" /></a>
 </div>
 
 ## 比赛结果
