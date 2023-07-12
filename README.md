@@ -1,5 +1,5 @@
 # Using Scene Memory Transformer and CLIP to Solve Object Navigation End-to-end
-Jing Wang*, Tianchu Zhang*, Ningyuan Zhang
+Jing Wang*, Tianchu Zhang*, Ningyuan Zhang, Hao Tian
 
 ∗Equal contribution.
 ## 介绍
